@@ -64,11 +64,12 @@ span{
 	background: var(--main-color);
 	border-radius: 5rem;
 }
-.h-icons a{
+.h-icons a, i{
 	font-size: 22px;
 	color: #fff;
 	margin-right: 15px;
 	margin-left: 8px;
+    
 }
 #menu-icon{
 	font-size: 32px;
@@ -97,13 +98,18 @@ section{
 	font-size: var(--big-font);
 	line-height: 1.2;
 	margin-bottom: 2rem;
+    text-align: center;
 }
 .home-text p{
 	font-size: var(--p-font);
 	font-weight: 500;
 	color: var(--second-color);
 	line-height: 32px;
-	margin-bottom: 2.3rem;
+	
+    text-align: center;
+}
+.home{
+    text-align: center;
 }
 .btn{
 	display: inline-block;
@@ -114,6 +120,7 @@ section{
 	font-weight: 600;
 	border-radius: 5rem;
 	transition: all .38s ease;
+    margin-top: 20px;
 }
 .btn:hover{
 	letter-spacing: 1px;
@@ -127,6 +134,25 @@ header.sticky{
 	margin-top: 50px;
 }
 
+.main-text{
+    text-align: center;
+}
+
+.main-textdois h2{
+    font-size: var(--h2-font);
+	margin-bottom: 10px;
+     
+}
+
+.main-textdois p{
+    
+    font-size: var(--p-font);
+	font-weight: 500;
+	color: #FF6868;
+	line-height: 32px;
+}
+
+
 .main-text h2{
 	font-size: var(--h2-font);
 	margin-bottom: 10px;
@@ -134,34 +160,55 @@ header.sticky{
 .main-text p{
 	font-size: var(--p-font);
 	font-weight: 500;
-	color: var(--second-color);
+	color: #FF6868;
 	line-height: 32px;
 }
+
+:root {
+    --bg-color: #ffffff;
+    --p-font: 16px; /* Ajuste conforme necessário */
+}
+
 .container-box{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	gap: -1rem;
 	align-items: center;
 	margin-top: 4rem;
 }
 .c-mainbox{
+    flex-direction: column;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1.4rem;
-	border-radius: 10px;
-	height: 90px;
+	border-radius: 50px;
+	height: 300px;
 	background: var(--bg-color);
-	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 100px 100px 0px;
 	transition: all .40s ease;
+}
+.container-img {
+    position: relative;
+    width: 150px; 
+    height: 150px; 
+    background-color: #C7472C; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container-text p{
 	font-size: var(--p-font);
 	font-weight: 500;
+    
 }
 .c-mainbox:hover{
 	transform: translateX(7px);
 	cursor: pointer;
+}
+.setas{
+    text-decoration: none;
 }
 .about{
 	display: grid;
