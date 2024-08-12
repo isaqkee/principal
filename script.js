@@ -1,3 +1,35 @@
+let currentIndex = 0;
+const cards = document.querySelectorAll('.card');
+const cardContainer = document.querySelector('.card-container');
+const setaEsquerda = document.querySelector('.setaEsquerda');
+const setaDireita = document.querySelector('.setaDireita');
+
+function updateCarousel() {
+    const cardWidth = cards[0].clientWidth;
+    cardContainer.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+}
+
+setaDireita.addEventListener('click', () => {
+    if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        updateCarousel();
+    }
+});
+
+setaEsquerda.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+    }
+});
+
+
+document.querySelectorAll('.heart-icon').forEach(icon => {
+	icon.addEventListener('click', function () {
+		this.classList.toggle('active');
+	});
+});
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function(){
@@ -26,3 +58,4 @@ const sr = ScrollReveal ({
 sr.reveal('.home-text',{delay:200, origin:'left'});
 sr.reveal('.home-img',{delay:200, origin:'right'});
 sr.reveal('.container, .about, .menu, .contact',{delay:200, origin:'bottom'});
+
