@@ -27,107 +27,105 @@
         </div>
     </header>
 
-<div class="tudo">
-    <h1>Menu</h1>
+    <div class="tudo">
+        <h1>Menu</h1>
         <nav>
             <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Pizzas</a></li>
-                <li><a href="#">Salada</a></li>
-                <li><a href="#">Nó do Alho</a></li>
-                <li><a href="#">Fatias</a></li>
+                <li><a href="#" data-filter="all">All</a></li>
+                <li><a href="#" data-filter="pizza">Pizzas</a></li>
+                <li><a href="#" data-filter="salada">Salada</a></li>
+                <li><a href="#" data-filter="no-alho">Nó do Alho</a></li>
+                <li><a href="#" data-filter="fatias">Fatias</a></li>
             </ul>
         </nav>
-    </header>
 
-    <section class="menu-grid">
-        <div class="menu-item pizza">
-            <img src="img/pizzaQueijo.png" alt="Pizza de Queijo">
-            <h3>Pizza de Queijo</h3>
-            <p>Molho de Tomate, Mussarela Fresca e Curada, Parmesão e Manjericão Fresco</p>
-            <p class="price">R$ 22,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/pizzaPepperoni.png" alt="Pizza de Queijo">
-            <h3>Pizza de Pepperoni</h3>
-            <p>Molho de Tomate, Mussarela Fresca e Curada, Parmesão e Pepperoni de Zoe </p>
-            <p class="price">R$ 25,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/pizzaClassica.png" alt="Pizza de Queijo">
-            <h3>Pizza Clássica</h3>
-            <p>Molho de Tomate, Mussarela Fresca, Parmesão, Boas Anchovas, Manjericão, Alho, Óleo de Pimenta e Parmesão)</p>
-            <p class="price">R$ 26,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/srPink.png" alt="Pizza de Queijo">
-            <h3>Sr. Pink</h3>
-            <p>Molho de Vodka, Mussafrela Fresca, Ricota, Manjericão Fresco e Parmesão</p>
-            <p class="price">R$ 28,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/pizzaBrocolis.png" alt="Pizza de Queijo">
-            <h3>Brócolis e Limão</h3>
-            <p>Brócolis, Limão Parservado, Mussarela Fresca e Curada, Alho e Parmesão</p>
-            <p class="price">R$ 28,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/pizzaBranca.png" alt="Pizza de Queijo">
-            <h3>Pizza Branca</h3>
-            <p>Ricota, Mussarela Fresca e Curada, Alho e Parmesão</p>
-            <p class="price">R$ 28,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/pizzaSalame.png" alt="Pizza de Queijo">
-            <h3>Pizza de Salame Picante</h3>
-            <p>Molho de Tomate, Mussarela Fresca e Curada, Salame Picante de Zoe, Cebolas e Parmesão</p>
-            <p class="price">R$ 27,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/pizzaBacon.png" alt="Pizza de Pepperoni">
-            <h3>Pizza de Bacon e Cebola</h3>
-            <p>Molho de Tomate, Mussarela Fresca e Curada, Bacon de Zoe, Cebolas e Parmesão</p>
-            <p class="price">R$ 27,00</p>
-        </div>
-        <div class="menu-item pizza">
-            <img src="img/fimSemana.png" alt="Pizza Clássica">
-            <h3>Fim de Semana Dino´s</h3>
-            <p>Molho de Tomate, Mussarela Fresca e Curada, Bacon de Zoe, Abacaxi, Jalapeños em conserva da casa e Parmesão</p>
-            <p class="price">R$ 29,00</p>
-        </div>
-        <div class="menu-item fatias">
-            <img src="img/fatiaQueijo.png" alt="Fatia de Queijo">
-            <h3>Fatia de Queijo</h3>
-            <p>Fatia de queijo redonda/quadrada</p>
-            <p class="price">R$ 4,50 / R$ 5,74</p>
-        </div>
-        <div class="menu-item fatias">
-            <img src="img/fatiaPepperoni.png" alt="Fatia de Pep">
-            <h3>Fatia Pepperoni</h3>
-            <p>Fatia de pepperoni redonda/quadrada</p>
-            <p class="price">R$ 5,00 / R$ 6,00</p>
-        </div>
-        <div class="menu-item fatias">
-            <img src="img/fatiaBranca.png" alt="Fatia Branca">
-            <h3>Fatia Branca</h3>
-            <p>Fatia Branca redonda</p>
-            <p class="price">R$ 4, 50</p>
-        </div>
-        <div class="menu-item salada">
-            <img src="img/salada.png" alt="Salada 1">
-            <h3>Salada</h3>
-            <p>Alface, Rúcula, Pepino, Tomate</p>
-            <p class="price">R$ 9, 00</p>
-        </div>
-        
-        <div class="menu-item no-alho">
-            <img src="img/nó.png" alt="Nó de Alho">
-            <h3>Nó de Alho</h3>
-            <p>Massa de Pizza, Alho, Parmesão</p>
-            <p class="price">R$ 5, 00</p>
-        </div>
-
-    </section>
+        <section class="menu-grid">
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaQueijo.png" alt="Pizza de Queijo">
+                <h3>Pizza de Queijo</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Parmesão e Manjericão Fresco</p>
+                <p class="price">R$ 22,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaPepperoni.png" alt="Pizza de Pepperoni">
+                <h3>Pizza de Pepperoni</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Parmesão e Pepperoni de Zoe </p>
+                <p class="price">R$ 25,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaClassica.png" alt="Pizza Clássica">
+                <h3>Pizza Clássica</h3>
+                <p>Molho de Tomate, Mussarela Fresca, Parmesão, Boas Anchovas, Manjericão, Alho, Óleo de Pimenta e Parmesão</p>
+                <p class="price">R$ 26,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/srPink.png" alt="Sr. Pink">
+                <h3>Sr. Pink</h3>
+                <p>Molho de Vodka, Mussafrela Fresca, Ricota, Manjericão Fresco e Parmesão</p>
+                <p class="price">R$ 28,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaBrocolis.png" alt="Brócolis e Limão">
+                <h3>Brócolis e Limão</h3>
+                <p>Brócolis, Limão Parservado, Mussarela Fresca e Curada, Alho e Parmesão</p>
+                <p class="price">R$ 28,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaBranca.png" alt="Pizza Branca">
+                <h3>Pizza Branca</h3>
+                <p>Ricota, Mussarela Fresca e Curada, Alho e Parmesão</p>
+                <p class="price">R$ 28,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaSalame.png" alt="Pizza de Salame Picante">
+                <h3>Pizza de Salame Picante</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Salame Picante de Zoe, Cebolas e Parmesão</p>
+                <p class="price">R$ 27,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/pizzaBacon.png" alt="Pizza de Bacon e Cebola">
+                <h3>Pizza de Bacon e Cebola</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Bacon de Zoe, Cebolas e Parmesão</p>
+                <p class="price">R$ 27,00</p>
+            </div>
+            <div class="menu-item pizza" data-category="pizza">
+                <img src="img/fimSemana.png" alt="Fim de Semana Dino's">
+                <h3>Fim de Semana Dino´s</h3>
+                <p>Molho de Tomate, Mussarela Fresca e Curada, Bacon de Zoe, Abacaxi, Jalapeños em conserva da casa e Parmesão</p>
+                <p class="price">R$ 29,00</p>
+            </div>
+            <div class="menu-item fatias" data-category="fatias">
+                <img src="img/fatiaQueijo.png" alt="Fatia de Queijo">
+                <h3>Fatia de Queijo</h3>
+                <p>Fatia de queijo redonda/quadrada</p>
+                <p class="price">R$ 4,50 / R$ 5,74</p>
+            </div>
+            <div class="menu-item fatias" data-category="fatias">
+                <img src="img/fatiaPepperoni.png" alt="Fatia de Pepperoni">
+                <h3>Fatia Pepperoni</h3>
+                <p>Fatia de pepperoni redonda/quadrada</p>
+                <p class="price">R$ 5,00 / R$ 6,00</p>
+            </div>
+            <div class="menu-item fatias" data-category="fatias">
+                <img src="img/fatiaBranca.png" alt="Fatia Branca">
+                <h3>Fatia Branca</h3>
+                <p>Fatia Branca redonda</p>
+                <p class="price">R$ 4,50</p>
+            </div>
+            <div class="menu-item salada" data-category="salada">
+                <img src="img/salada.png" alt="Salada">
+                <h3>Salada</h3>
+                <p>Alface, Rúcula, Pepino, Tomate</p>
+                <p class="price">R$ 9,00</p>
+            </div>
+            <div class="menu-item no-alho" data-category="no-alho">
+                <img src="img/nó.png" alt="Nó de Alho">
+                <h3>Nó de Alho</h3>
+                <p>Massa de Pizza, Alho, Parmesão</p>
+                <p class="price">R$ 5,00</p>
+            </div>
+        </section>
+    </div>
         
 
     <section class="contact" id="contact">
