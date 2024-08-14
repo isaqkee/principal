@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat-Medium';
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(Montserrat-Bold.ttf);
+}
+
+:root{
+    --text-color: #302e29;
+    --main-color: #c7472c;
+    --second-color: #858585;
+    --bg-color: #fffbf6;
+    --big-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+
+h1, h2{
+    font-family: 'Montserrat-Bold';
+}
+
+p, h3, h4, li, a{
+    font-family: 'Montserrat-Medium';
+}
+
+/* Estilos gerais */
+body {
+    background-color: #f7f7f7;
+}
+
+/* Estilo do cabeçalho */
+header{
+    position: fixed;
+    width: 126%;
+    top: 0px;
+    right: -192px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 23px 15%;
+    transition: all .38s ease;
+    background-color: var(--bg-color);
+    height: 110px;
+}
+
+.logo{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+span{
+    color: #C7472C;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: #555555;
+    font-size: var(--p-font);
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 2px 25px;
+    border-bottom: 2px solid transparent;
+    transition: all .38s ease;
+}
+.navbar a:hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+    padding: 10px 22px;
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+.h-icons a, i{
+    font-size: 22px;
+    color: #fff;
+    margin-right: 15px;
+    margin-left: 8px;
+    
+}
+#menu-icon{
+    font-size: 32px;
+    color: var(--bg-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 90px 15% 80px;
+}
+
+.geral h1{
+    margin-top: 140px;
+}
+
+.tudo{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tudo h1{
+    color: #302e29;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+    gap: 30px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menu-item {
+    background-color: #d9534f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: 200px; /* Ajuste a altura das imagens */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.menu-item p {
+    font-size: 1rem;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Estilo do rodapé */
+.contact{
+    padding: 50px 15% 40px;
+}
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-content h4{
+    font-size: 20px;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+.contact-content li{
+    margin-bottom: 16px;
+}
+.contact-content li a{
+    display: block;
+    color: #555555;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .40s ease;
+    margin-right: 30px;
+}
+.contact-content li a:hover{
+    transform: translateX(10px);
+    color: var(--main-color);
+}
+.last-text p{
+    text-align: center;
+    padding: 25px;
+    color: #555555;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes img{
+    width: 230px;
+
+}
